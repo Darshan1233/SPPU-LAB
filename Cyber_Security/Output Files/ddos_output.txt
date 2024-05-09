@@ -1,0 +1,74 @@
+yash@Ubantu:~/Desktop$ sudo python3 ddos.py
+
+----------------------------------------------------
+
+---------      D D O S     A T T A C K     ---------
+
+----------------------------------------------------
+
+
+The IP address of the Host to Attack is :  127.0.0.1
+
+The PORT address of the Host to Attack is :  1024
+
+----------------------------------------------------
+
+[                    ] 0% 
+[=====               ] 25%
+[==========          ] 50%
+[===============     ] 75%
+[====================] 100%
+
+----------------------------------------------------
+
+Sent 1 packet to 127.0.0.1 throught port:1025
+Sent 2 packet to 127.0.0.1 throught port:1026
+Sent 3 packet to 127.0.0.1 throught port:1027
+Sent 4 packet to 127.0.0.1 throught port:1028
+Sent 5 packet to 127.0.0.1 throught port:1029
+Sent 6 packet to 127.0.0.1 throught port:1030
+Sent 7 packet to 127.0.0.1 throught port:1031
+Sent 8 packet to 127.0.0.1 throught port:1032
+Sent 9 packet to 127.0.0.1 throught port:1033
+Sent 10 packet to 127.0.0.1 throught port:1034
+Sent 11 packet to 127.0.0.1 throught port:1035
+Sent 12 packet to 127.0.0.1 throught port:1036
+Sent 13 packet to 127.0.0.1 throught port:1037
+Sent 14 packet to 127.0.0.1 throught port:1038
+Sent 15 packet to 127.0.0.1 throught port:1039
+Sent 16 packet to 127.0.0.1 throught port:1040
+Sent 17 packet to 127.0.0.1 throught port:1041
+Sent 18 packet to 127.0.0.1 throught port:1042
+Sent 19 packet to 127.0.0.1 throught port:1043
+Sent 20 packet to 127.0.0.1 throught port:1044
+Sent 21 packet to 127.0.0.1 throught port:1045
+Sent 22 packet to 127.0.0.1 throught port:1046
+Sent 23 packet to 127.0.0.1 throught port:1047
+Sent 24 packet to 127.0.0.1 throught port:1048
+Sent 25 packet to 127.0.0.1 throught port:1049
+Sent 26 packet to 127.0.0.1 throught port:1050
+Sent 27 packet to 127.0.0.1 throught port:1051
+Sent 28 packet to 127.0.0.1 throught port:1052
+Sent 29 packet to 127.0.0.1 throught port:1053
+Sent 30 packet to 127.0.0.1 throught port:1054
+Sent 31 packet to 127.0.0.1 throught port:1055
+Sent 32 packet to 127.0.0.1 throught port:1056
+Sent 33 packet to 127.0.0.1 throught port:1057
+Sent 34 packet to 127.0.0.1 throught port:1058
+Sent 35 packet to 127.0.0.1 throught port:1059
+Sent 36 packet to 127.0.0.1 throught port:1060
+Sent 37 packet to 127.0.0.1 throught port:1061
+Sent 9532 packet to 127.0.0.1 throught port:10556
+Sent 9533 packet to 127.0.0.1 throught port:10557
+Sent 9534 packet to 127.0.0.1 throught port:10558
+Sent 9535 packet to 127.0.0.1 throught port:10559
+Sent 9536 packet to 127.0.0.1 throught port:10560
+Sent 9537 packet to 127.0.0.1 throught port:10561
+Sent 9538 packet to 127.0.0.1 throught port:10562
+^CTraceback (most recent call last):
+  File "/home/yash/Desktop/ddos.py", line 50, in <module>
+    print ("Sent %s packet to %s throught port:%s"%(sent,ip,port))
+KeyboardInterrupt
+
+yash@Ubantu:~/Desktop$ 
+

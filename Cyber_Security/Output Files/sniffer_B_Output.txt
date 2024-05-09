@@ -1,0 +1,183 @@
+yash@Ubantu:~/Desktop$ sudo python3 sniffer_B.py -v -i lo
+###[ Ethernet ]### 
+  dst       = 00:00:00:00:00:00
+  src       = 00:00:00:00:00:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 86
+     id        = 24061
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = udp
+     chksum    = 0xde63
+     src       = 127.0.0.1
+     dst       = 127.0.0.53
+     \options   \
+###[ UDP ]### 
+        sport     = 52533
+        dport     = domain
+        len       = 66
+        chksum    = 0xfe89
+###[ DNS ]### 
+           id        = 17861
+           qr        = 0
+           opcode    = QUERY
+           aa        = 0
+           tc        = 0
+           rd        = 1
+           ra        = 0
+           z         = 0
+           ad        = 1
+           cd        = 0
+           rcode     = ok
+           qdcount   = 1
+           ancount   = 0
+           nscount   = 0
+           arcount   = 1
+           \qd        \
+            |###[ DNS Question Record ]### 
+            |  qname     = 'img-getpocket.cdn.mozilla.net.'
+            |  qtype     = A
+            |  qclass    = IN
+           an        = None
+           ns        = None
+           \ar        \
+            |###[ DNS OPT Resource Record ]### 
+            |  rrname    = '.'
+            |  type      = OPT
+            |  rclass    = 1200
+            |  extrcode  = 0
+            |  version   = 0
+            |  z         = 0
+            |  rdlen     = 0
+            |  \rdata     \
+
+###[ Ethernet ]### 
+  dst       = 00:00:00:00:00:00
+  src       = 00:00:00:00:00:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 86
+     id        = 24061
+     flags     = DF
+     frag      = 0
+     ttl       = 64
+     proto     = udp
+     chksum    = 0xde63
+     src       = 127.0.0.1
+     dst       = 127.0.0.53
+     \options   \
+###[ UDP ]### 
+        sport     = 52533
+        dport     = domain
+        len       = 66
+        chksum    = 0xfe89
+###[ DNS ]### 
+           id        = 17861
+           qr        = 0
+           opcode    = QUERY
+           aa        = 0
+           tc        = 0
+           rd        = 1
+           ra        = 0
+           z         = 0
+           ad        = 1
+           cd        = 0
+           rcode     = ok
+           qdcount   = 1
+           ancount   = 0
+           nscount   = 0
+           arcount   = 1
+           \qd        \
+            |###[ DNS Question Record ]### 
+            |  qname     = 'img-getpocket.cdn.mozilla.net.'
+            |  qtype     = A
+            |  qclass    = IN
+           an        = None
+           ns        = None
+           \ar        \
+            |###[ DNS OPT Resource Record ]### 
+            |  rrname    = '.'
+            |  type      = OPT
+            |  rclass    = 1200
+            |  extrcode  = 0
+            |  version   = 0
+            |  z         = 0
+            |  rdlen     = 0
+            |  \rdata     \
+
+
+
+###[ Ethernet ]### 
+  dst       = 00:00:00:00:00:00
+  src       = 00:00:00:00:00:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 116
+     id        = 53604
+     flags     = DF
+     frag      = 0
+     ttl       = 1
+     proto     = udp
+     chksum    = 0xa9de
+     src       = 127.0.0.53
+     dst       = 127.0.0.1
+     \options   \
+###[ UDP ]### 
+        sport     = domain
+        dport     = 58653
+        len       = 96
+        chksum    = 0xfea7
+###[ DNS ]### 
+           id        = 37536
+           qr        = 1
+           opcode    = QUERY
+           aa        = 0
+           tc        = 0
+           rd        = 1
+           ra        = 1
+           z         = 0
+           ad        = 0
+           cd        = 0
+           rcode     = ok
+           qdcount   = 1
+           ancount   = 1
+           nscount   = 0
+           arcount   = 1
+           \qd        \
+            |###[ DNS Question Record ]### 
+            |  qname     = 'signaler-pa.clients6.google.com.'
+            |  qtype     = AAAA
+            |  qclass    = IN
+           \an        \
+            |###[ DNS Resource Record ]### 
+            |  rrname    = 'signaler-pa.clients6.google.com.'
+            |  type      = AAAA
+            |  rclass    = IN
+            |  ttl       = 71
+            |  rdlen     = 16
+            |  rdata     = 2404:6800:4009:815::200a
+           ns        = None
+           \ar        \
+            |###[ DNS OPT Resource Record ]### 
+            |  rrname    = '.'
+            |  type      = OPT
+            |  rclass    = 65494
+            |  extrcode  = 0
+            |  version   = 0
+            |  z         = 0
+            |  rdlen     = 0
+            |  \rdata     \
+
+^Cyash@Ubantu:~/Desktop$ 
+

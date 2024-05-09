@@ -1,0 +1,60 @@
+yash@Ubantu:~/Desktop$ sudo python3 ip_spoofing.py
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+.
+Sent 1 packets.
+
+^CTraceback (most recent call last):
+  File "/home/yash/Desktop/ip_spoofing.py", line 11, in <module>
+    send(spoofed_packet)
+  File "/usr/local/lib/python3.10/dist-packages/scapy/sendrecv.py", line 445, in send
+    return _send(
+  File "/usr/local/lib/python3.10/dist-packages/scapy/sendrecv.py", line 419, in _send
+    socket.close()
+  File "/usr/local/lib/python3.10/dist-packages/scapy/arch/linux.py", line 549, in close
+    set_promisc(self.ins, self.iface, 0)
+  File "/usr/local/lib/python3.10/dist-packages/scapy/arch/linux.py", line 184, in set_promisc
+    s.setsockopt(SOL_PACKET, cmd, mreq)
+KeyboardInterrupt
+
+yash@Ubantu:~/Desktop$ 
+
+
