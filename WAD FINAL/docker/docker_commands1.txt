@@ -1,0 +1,63 @@
+Microsoft Windows [Version 10.0.22631.3527]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\darsh>docker pull openjdk
+Using default tag: latest
+latest: Pulling from library/openjdk
+197c1adcd755: Pull complete
+57b698b7af4b: Pull complete
+95a27dbe0150: Pull complete
+Digest: sha256:9b448de897d211c9e0ec635a485650aed6e28d4eca1efbc34940560a480b3f1f
+Status: Downloaded newer image for openjdk:latest
+docker.io/library/openjdk:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview openjdk
+
+C:\Users\darsh>
+C:\Users\darsh>docker images
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+openjdk      latest    71260f256d19   15 months ago   470MB
+
+C:\Users\darsh>run --name JAVA -it -d openjdk
+'run' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\darsh>docker run --name JAVA -it -d openjdk
+7fad60c3effd75efc81e2d99c7302e3a1ba3e0079e4faa2226d748afcba666ff
+
+C:\Users\darsh>docker ps
+CONTAINER ID   IMAGE     COMMAND    CREATED          STATUS          PORTS     NAMES
+7fad60c3effd   openjdk   "jshell"   35 seconds ago   Up 33 seconds             JAVA
+
+C:\Users\darsh>docker exec -it JAVA jshell
+|  Welcome to JShell -- Version 18.0.2.1
+|  For an introduction type: /help intro
+
+jshell> System.out.println("hello docker");
+hello docker
+
+jshell> /exit
+|  Goodbye
+
+What's next?
+  Try Docker Debug for seamless, persistent debugging tools in any container or image → docker debug JAVA
+  Learn more at https://docs.docker.com/go/debug-cli/
+
+C:\Users\darsh>docker ps
+CONTAINER ID   IMAGE     COMMAND    CREATED         STATUS         PORTS     NAMES
+7fad60c3effd   openjdk   "jshell"   4 minutes ago   Up 4 minutes             JAVA
+
+C:\Users\darsh>docker container rm 7fad60c3effd
+Error response from daemon: cannot remove container "/JAVA": container is running: stop the container before removing or force remove
+
+C:\Users\darsh>docker stop 7fad60c3effd
+7fad60c3effd
+
+C:\Users\darsh>docker container rm 7fad60c3effd
+7fad60c3effd
+
+C:\Users\darsh>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\darsh>

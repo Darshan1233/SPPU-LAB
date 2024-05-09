@@ -1,0 +1,44 @@
+1)docker -v
+2)docker images
+3)docker ps
+4)docker pull openjdk
+5)docker images
+6)docker run --name JAVA -it -d openjdk
+7)docker ps
+8)docker exec -it JAVA jshell
+9)system.out.println("Hello");
+10)/exit
+11)docker ps
+12)docker stop containerID
+13)docker container rm containerID
+14)docker ps
+15)docker images
+16)docker image prune
+
+
+website : Docker Hub
+
+
+
+
+
+
+
+
+
+docker -v: This command checks the Docker version installed on your system. It's a valid command to check Docker version.
+docker images: This command lists all the Docker images available on your system. It's valid to check the available Docker images.
+docker ps: This command lists all the running Docker containers. It's valid to check the running containers.
+docker pull openjdk: This command pulls the latest version of the OpenJDK Docker image from Docker Hub. It's valid to download the OpenJDK image.
+docker images: After pulling the OpenJDK image, this command lists all Docker images including the newly pulled OpenJDK image. It's valid to check the updated list of Docker images.
+docker run --name JAVA -it -d openjdk: This command runs a new Docker container named "JAVA" in detached mode (-d) with interactive (-it) options using the OpenJDK image. It's valid to start a container with these options.
+docker ps: After starting the container named "JAVA", this command lists all running Docker containers, including the newly created "JAVA" container. It's valid to check the running containers.
+docker exec -it JAVA jshell: This command executes the JShell interactive Java shell within the "JAVA" container. It's valid to access the container and run commands inside it.
+system.out.println("Hello");: Inside the JShell session, this command prints "Hello" to the console. It's valid Java syntax.
+/exit: This command exits the JShell session. It's valid to exit the JShell.
+docker ps: After exiting the JShell session, this command lists all running Docker containers. It's valid to check if the "JAVA" container is still running.
+docker stop containerID: This command stops the Docker container with the specified container ID. It's valid to stop a running container.
+docker container rm containerID: This command removes the Docker container with the specified container ID. It's valid to remove a stopped container.
+docker ps: After removing the container, this command lists all running Docker containers. It's valid to check if the container has been removed.
+docker images: This command lists all Docker images available on your system. It's valid to check the available Docker images after container removal.
+docker image prune: This command removes all dangling (unused) Docker images. It's valid to clean up unused Docker images from the system.

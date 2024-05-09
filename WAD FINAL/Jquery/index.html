@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        body {
+            background-color: #f6f6f6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .ui-page {
+            background-color: #f6f6f6;
+        }
+        .ui-header,
+        .ui-footer {
+            background-color: #333333;
+            color: #ffffff;
+        }
+        .ui-content {
+            padding: 15px;
+        }
+        .ui-btn {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .popup-content {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #dc3545;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            z-index: 9999;
+            color: #ffffff;
+        }
+
+        .alert {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #007bff;
+            margin-top: 15px;
+            display: none;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333333;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            // Change background color of colorCard
+            $("#colorCard").click(function () {
+                $(this).css("background-color", "#ffc107");
+            });
+            // Hide the hideCard when clicked
+            $("#hideCard").click(function () {
+                $(this).hide();
+            });
+            // Toggle popup visibility when "Learn More" button is clicked
+            $("#learnMore").click(function () {
+                $("#popup").toggle();
+            });
+            // Show alert message when submit button is clicked
+            $("#submitButton").click(function () {
+                $(".alert").fadeIn().delay(2000).fadeOut();
+            });
+            // Close popup when close button is clicked
+            $(".popup-close").click(function () {
+                $("#popup").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" data-position="fixed">
+            <div class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <h1>Welcome to Our Company</h1>
+        </div>
+
+        <div data-role="content">
+            <div class="card" id="colorCard">
+                <h3>Explore Our Services</h3>
+                <p>Click here to see what we offer.</p>
+            </div>
+            <div class="card" id="hideCard">
+                <h3>Hide This Card</h3>
+                <p>Click here to hide this section.</p>
+            </div>
+            <a href="#" id="learnMore" data-role="button" data-icon="info" data-iconpos="right">Learn More</a>
+            <button id="submitButton" data-role="button">Submit</button>
+            <div class="alert">
+                Thank you for your submission!
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2024 Company Website</h4>
+        </div>
+    </div>
+
+    <div id="popup" class="popup-content">
+        <span class="popup-close">&#10006;</span>
+        <h3>Our Services</h3>
+        <p>Here are some of the services we offer:</p>
+        <ul data-role="listview">
+            <li>Web Design</a></li>
+            <li>Mobile App Development</a></li>
+            <li>Digital Marketing</a></li>
+            <li>Graphic Design</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
